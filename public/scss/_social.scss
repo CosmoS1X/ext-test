@@ -8,17 +8,20 @@
     margin-bottom: 2rem;
   }
 
-  &__link {
+  &__link-item {
     margin-right: 2rem;
-    text-decoration: none;
   }
 
-  &__link:last-child {
+  &__link-item:last-child {
     margin-right: 0;
   }
 
-  &__link:hover {
+  &__link-item:hover {
     opacity: 70%;
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__pic {
