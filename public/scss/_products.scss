@@ -1,0 +1,68 @@
+.products {
+  background-color: #F7F8FA;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0 6rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 468px;
+    height: 620px;
+    background-color: #fff;
+    margin: 5rem 7.2rem 0 0;
+  }
+
+  &__card-title {
+    width: 343px;
+    margin-bottom: 3.4rem;
+  }
+
+  &__card-img {
+    margin: auto 0;
+  }
+
+  &__card-pic {
+    display: block;
+    max-width: 265px;
+    max-height: 300px;
+  }
+
+  &__shops {
+    display: flex;
+  }
+
+  &__shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4.3rem;
+  }
+
+  &__shop:last-child {
+    margin-right: 0;
+  }
+
+  &__shop-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 2.6rem;
+  }
+
+  &__shop-pic {
+    display: block;
+  }
+
+  &__shop-buy {
+    margin-bottom: 5rem;
+  }
+}

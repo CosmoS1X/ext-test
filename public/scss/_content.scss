@@ -1,0 +1,41 @@
+.content {
+  &__title-container {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_bg-grey {
+      background-color: #F7F8FA;
+    }
+  }
+
+  &__subtitle {
+    margin: 5rem 0 1.4rem;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__desc {
+    max-width: 403px;
+    margin: 0 3rem;
+  }
+
+  &__desc-title {
+    margin-bottom: 1.4rem;
+  }
+
+  &__photo {
+    margin: 5rem 3rem;
+  }
+
+  &__pic {
+    display: block;
+  }
+}

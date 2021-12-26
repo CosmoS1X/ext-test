@@ -1,0 +1,57 @@
+.promo {
+  max-width: 1280px;
+  height: 650px;
+  margin: 0 auto;
+  background: #aeb8d3 url(../img/intro-bg.jpg);
+  position: relative;
+
+  &__header {
+    width: 500px;
+    height: 275px;
+    background-color: #fff;
+    position: absolute;
+    top: 188px;
+    right: 58px;
+  }
+
+  &__title {
+    margin-top: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__circle-1 {
+    position: absolute;
+    top: 107px;
+    left: 246px;
+    width: 162px;
+  }
+
+  &__circle-2 {
+    position: absolute;
+    bottom: 144px;
+    left: 220px;
+    width: 184px;
+  }
+
+  &__gel {
+    width: 85px;
+    height: 218px;
+    position: absolute;
+    top: 305px;
+    left: 270px;
+    transform: rotate(-15deg);
+  }
+
+  &__cream {
+    width: 157px;
+    height: 121px;
+    position: absolute;
+    top: 126px;
+    left: 253px;
+    transform: rotate(12deg);
+  }
+}

@@ -15,19 +15,6 @@ module.exports = {
         exclude: /node_modules/,
         use: 'babel-loader',
       },
-      // loading images
-      {
-        test: /\.(png|jpe?g|gif|ico|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images',
-              name: '[name]-[sha1:hash:7].[ext]',
-            },
-          },
-        ],
-      },
       // loading CSS
       {
         test: /\.(css)$/,
@@ -36,7 +23,7 @@ module.exports = {
       // loading SASS/SCSS
       {
         test: /\.(s[ac]ss)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'resolve-url-loader', 'sass-loader'],
       },
     ],
   },

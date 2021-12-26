@@ -1,3 +1,165 @@
-.title {
-  color: red;
+@import './colors';
+@import './header';
+@import './promo';
+@import './cream';
+@import './gel';
+@import './checklist';
+@import './content';
+@import './products';
+@import './social';
+@import './footer';
+
+@font-face {
+  font-family: 'NIVEA Brand Type';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/Nivea-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NIVEA Brand Type';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Nivea-Regular.otf') format('opentype');
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'NIVEA Brand Type', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: $textColor;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+@mixin title($_size) {
+  font-size: $_size;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-h1 {
+  @include title(4.8rem);
+}
+
+.title-h2 {
+  @include title(3.2rem);
+}
+
+.title-h3 {
+  @include title(2.4rem);
+}
+
+.title-thin {
+  font-weight: normal;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.link {
+  color: $textColor;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 70%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 2rem 4rem 1.7rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0032a0;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 200ms linear;
+
+  &_slim {
+    padding: 1.6rem 4rem 1.3rem;
+  }
+
+  &_outline {
+    padding: 1.4rem 3.5rem 1.2rem;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #06369d;
+    background-color: #fff;
+    border: 1px solid #06369d;
+  }
+}
+
+.btn:hover {
+  transform: scale(105%);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: $lineColor;
+}
+
+.table {
+  width: 100%;
+  max-width: 1044px;
+  margin: 1.5rem auto 0;
+  font-size: 1.4rem;
+  border-collapse: collapse;
+
+  &__cell {
+    padding: 1.2rem 3.5rem 1rem;
+    border: 1px solid #eff5fa;
+    line-height: 1;
+  }
+}
+
+.copyright-symbol {
+  font-family: sans-serif;
+  font-size: inherit;
 }

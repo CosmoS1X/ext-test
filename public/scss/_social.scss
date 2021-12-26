@@ -1,0 +1,38 @@
+.social {
+  &__title {
+    margin: 5rem 0 1.2rem;
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+
+  &__link:last-child {
+    margin-right: 0;
+  }
+
+  &__link:hover {
+    opacity: 70%;
+  }
+
+  &__pic {
+    display: block;
+  }
+
+  &__warning {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  &__warning-text {
+    font-size: 1.1rem;
+    padding: 0 0.6rem;
+  }
+}
