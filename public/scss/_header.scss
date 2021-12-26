@@ -1,4 +1,9 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+
   &__container {
     display: flex;
     flex-wrap: wrap;
